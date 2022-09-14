@@ -4,11 +4,9 @@
 Anda dapat mengakses code ini pada [link](https://pbp-tugas-urip.herokuapp.com/katalog/) ini.
 
 
-
-
 ## Penjelasan Bagan
 
-![Logo](https://drive.google.com/uc?export=view&id=1ddI3FFPkV_P6XXPNIlDxHVIF0j4NGo4J)
+![Logo](https://drive.google.com/uc?export=view&id=1shOuCmVnHddrDRwPoG2etfNKjjyI4B7N)
 
 Penjelasan berdasarkan urutan bagan:
 
