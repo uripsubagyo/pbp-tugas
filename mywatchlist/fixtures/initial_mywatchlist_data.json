@@ -1,0 +1,223 @@
+
+[
+    {
+        "model": "mywatchlist.mylist",
+        "pk": 1,
+        "fields": {
+            "watched": "Belum ditonton",
+            "title": "Mumun",
+            "rating": 1,
+            "release_date": "1 September 2022",
+            "review": "This adaptation of Jadi Pocong series in early 2000s brought back so many nostalgias and memories. I remember watching the series back in the days. To see the iconic character of Mumun in the modern era is quite refreshing. This movie was more of a horror comedy, just like the original series. The storyline was light, there were many funny scenes, the drama parts were heart touching, but the horror aspects were not that scary. The characters of Mimin and Juned were definitely the standouts in this movie. This movie was a nice treat to the original fans of the series, including myself. But overall, it could've been a lot better, imo."
+        }
+    },
+    {
+        "model": "mywatchlist.mylist",
+        "pk": 2,
+        "fields": {
+            "watched": "Sudah ditonton",
+            "title": "Mendarat Darurat",
+            "rating": 2,
+            "release_date": "8 September 2022",
+            "review": "Mendarat Darurat has the right formula as a romantic comedy. The comedy side and the romantic side complement each other making this film fun to watch. The audience's initial introduction to the characters in the film's storyline and the introduction of the series of conflicts that later colored their lives were successfully delivered with a fairly thick comical energy. Reza Rahadian, Luna Maya and Marissa Anita wer able to provide quite satisfactory acting. Congrats to Pandji to be able to move on and grow up from the failure of Partikelir. This movie is better than expected and will suprise you in a good way."
+        }
+    },
+    {
+        "model": "mywatchlist.mylist",
+        "pk": 3,
+        "fields": {
+            "watched": "Sudah ditonton",
+            "title": "Nokta Merah Perkawinan",
+            "rating": 4,
+            "release_date": "8 September 2022",
+            "review": "Ada beberapa hal yang ia ambil dari film ini yaitu: Jangan sampai orang tua yang banyak berperan tentang dapur rumah tangga setelah menikah Komunikasi adalah kunci segalanya Jika memiliki masalah alangkah lebih baiknya diselesaikan secepatnya dan jangan menghindar Kalau ingin hubungan tetap berjalan maksimal, maka harus berjuang bersama tidak salah satu saja Perkawinan cukup berat dan banyak yang akan ditanggung, jadi harus berjuang. Satu keputusan kecil akan berarti untuk hubungan kamu."
+        }
+    },
+    {
+        "model": "mywatchlist.mylist",
+        "pk": 4,
+        "fields": {
+            "watched": "Belum ditonton",
+            "title": "One Piece Film: Red",
+            "rating": 2,
+            "release_date": "16 September 2022",
+            "review": "I just reached the timeskip and I gotta say thank you Oda for making this masterpiece. One piece will always have a special place in my heart, there are so many great and memorable moments in this anime which makes it just so unique and perfect, I would definitely reccomend this anime."
+        }
+    },
+    {
+        "model": "mywatchlist.mylist",
+        "pk": 5,
+        "fields": {
+            "watched": "Belum ditonton",
+            "title": "Pinocchio",
+            "rating": 1,
+            "release_date": "8 September 2022",
+            "review": "I was bored for most of this. I didn't care. The presence of Hanks normally ensures a certain quality - not this time. The FX are ropey. The cat and pinocchio are not well done. Its being described as a live action remake, but most of the characters are CGI.Parts of it move along at a speed and others seem to drag. Tom Hanks cannot save this. Its an overblown, empty experience. Its saving grace is that we didn't have to sit through too much singing. Though some of the songs from the Disney cartoon are there in part. I'm guessing this went straight to Disney+ as it would have been a massive flop if it went to cinemas."
+        }
+    },
+    {
+        "model": "mywatchlist.mylist",
+        "pk": 6,
+        "fields": {
+            "watched": "Belum ditonton",
+            "title": "Top Gun: Maverick",
+            "rating": 4,
+            "release_date": "27 Mei 2022",
+            "review": "Top Gun (1986) made Tom Cruise a star, and now 36 years later he jumps back in role of Pete Mitchell AKA Maverick almost like he never left. Maverick never seems let his age slow him down, and still is cocky has ever, and is ordered to train a bunch of young pilots for a deadly mission, but sees a little bit of himself in them, and must get them working together has a team. Tom Cruise is great has Maverick, who is coming to terms with the past. Miles Teller and Glen Powell are also great, and not to mention Jennifer Connelly. But the flying scenes are what makes this movie, you feel like your flying with them. Feels has real has ever. A terrific sequel 36 years worth the wait."
+        }
+    },
+    {
+        "model": "mywatchlist.mylist",
+        "pk": 7,
+        "fields": {
+            "watched": "Belum ditonton",
+            "title": "Three Thousand Years of Longing",
+            "rating": 1,
+            "release_date": "31 August 2022",
+            "review": "A cautionary tale about human desire and what it means to love. The pacing was completely on point; I was engrossed right from the first few moments. The cinematography is beautiful. Miller who shows his versatility in a break from his typical movies. That being said it is noticeably a George Miller movie in style. Recommend this one very much, it does not feel too artsy but at the same time is not your typical fantasy movie. This movie is a marvelous artistic depiction of fundamental spiritual concepts that will leave some cold and indifferent while enchanting the initiated in the spiritual paths of the primordial tradition."
+        }
+    },
+    {
+        "model": "mywatchlist.mylist",
+        "pk": 8,
+        "fields": {
+            "watched": "Belum ditonton",
+            "title": "The Invitations",
+            "rating": 1,
+            "release_date": "7 September 2022",
+            "review": "It fails at being a horror It fails at being a romance It could've been a passable mystery, but the trailer spoiled it. It wasn't bombastic enough to be fun, but it wasn't well-written enough to justify its dullness."
+        }
+    },
+    {
+        "model": "mywatchlist.mylist",
+        "pk": 9,
+        "fields": {
+            "watched": "Sudah ditonton",
+            "title": "Spider-Man: No Way Home",
+            "rating": 3,
+            "release_date": "15 December 2021",
+            "review": "Superhero extravaganza! Spider-Man NWH didn't meet my expectations, it exceeded them. The most emotionally resonant MCU film so far. This movie is worth every excruciating moment we had to wait. The visuals, the score, the emotions, the story, and ofc the fan-service. This film understands spider-man fans like no other spider-man film before it. Truly a celebration of the most beloved character in the best way possible!"
+        }
+    },
+    {
+        "model": "mywatchlist.mylist",
+        "pk": 10,
+        "fields": {
+            "watched": "Belum ditonton",
+            "title": "Super Pets",
+            "rating": 2,
+            "release_date": "5 August 2022",
+            "review": "It's not bad. It's not bad at all. I think story wise I was expecting it to go down differently, but I like the animation and it was humorous for what it was"
+        }
+    },
+    {
+        "model": "mywatchlist.mylist",
+        "pk": 11,
+        "fields": {
+            "watched": "Belum ditonton",
+            "title": "Dune",
+            "rating": 3,
+            "release_date": "13 October 2021",
+            "review": "Nitpics aside, this is a movie with amazing production design, a powerful score, masterful visual effects and phenomenal perfomances. As a fan of the book I can say that it delivered the story in way I didnt expect. It streamlined certain events yet managed to communicate the core messages of the book."
+        }
+    },
+    {
+        "model": "mywatchlist.mylist",
+        "pk": 12,
+        "fields": {
+            "watched": "Belum ditonton",
+            "title": "Morbius",
+            "rating": 1,
+            "release_date": "30 March 2022",
+            "review": "The story, the character development, the action... everything about it felt very dated and messy, with practically no redeeming qualities to be found anywhere. There was no depth to any of the characters which made it so hard to get invested in what was going on. In truth I don't think any of the performances were bad per se, but they were all so bland."
+        }
+    },
+    {
+        "model": "mywatchlist.mylist",
+        "pk": 13,
+        "fields": {
+            "watched": "Belum ditonton",
+            "title": "All Quiet on the Western Front",
+            "rating": 3,
+            "release_date": "28 October 2022",
+            "review": "I've just came out of the TIFF presentation of this film. Before going in, I assumed that little could be done with the story and the presentation would be one of cinematic sequences and sound. I wasn't wrong, and boy was I blown away (excuse the terrible pun).            "
+        }
+    },
+    {
+        "model": "mywatchlist.mylist",
+        "pk": 14,
+        "fields": {
+            "watched": "Belum ditonton",
+            "title": "Midsommar",
+            "rating": 2,
+            "release_date": "11 September 2019",
+            "review": "I'm not sure how but the movie had me on edge the entire time. You have to enjoy cinematography to really enjoy this. I left the movie like I just came down from a high. The whole thing felt like a bad trip afterwards, I was pleased and not at the same time but I think that's how we're meant to feel."
+        }
+    },
+    {
+        "model": "mywatchlist.mylist",
+        "pk": 15,
+        "fields": {
+            "watched": "Sudah ditonton",
+            "title": "The Lost City",
+            "rating": 6,
+            "release_date": "23 March 2022",
+            "review": "The story was very enjoyable. It started off kind of wonky and felt like I was in for a bad time, but once the prologue passed and the main portion of the movie started it got much better."
+        }
+    },
+    {
+        "model": "mywatchlist.mylist",
+        "pk": 16,
+        "fields": {
+            "watched": "Sudah ditonton",
+            "title": "Doctor Strange in the Multiverse of Madness",
+            "rating": 2,
+            "release_date": "5 May 2022",
+            "review": "The plot is super weak - the worst of the film - but the script is also very erroneous with some strange and unexplainable writing decisions. There are some interesting shots - some Dutch angles and POV are cool - but this feel stupidly long for a film that is just 2 hours long. It's like watching the action going from setpiece to setpiece in a very inorganic way while travelling between boring universe with a lot of cringe dialogue. I don't even get the point of all this story for the entire universe and even the score - surprisingly considering that is Elfman - is super generic."
+        }
+    },
+    {
+        "model": "mywatchlist.mylist",
+        "pk": 17,
+        "fields": {
+            "watched": "Belum ditonton",
+            "title": "Moonfall ",
+            "rating": 1,
+            "release_date": "2 February 2022",
+            "review": "I don't think it's a bad movie. The effects were great. The movie üas just too long, longer than necessary. The subject of the movie is, of course, very, very, very ridiculous, but so are many movies too. I enjoyed watching the movie with my snacks and beer. I guess I like these kinds of movies, even though they're silly."
+        }
+    },
+    {
+        "model": "mywatchlist.mylist",
+        "pk": 18,
+        "fields": {
+            "watched": "Belum ditonton",
+            "title": "Wedding Proposal",
+            "rating": 5,
+            "release_date": "7 Mei 2021",
+            "review": "Emil Heradi's 'Wedding Proposal' falls flat with its half-baked conflicts and a great deal of sloppy writing and direction. The movie isn't excessively bad, just plain bland and uninteresting. While Dimas Anggara and Sheryl Sheinafia separately can be charismatic and likable, together they have no chemistry. Arya Saloka finds his groove with his comedic timing and acting chops and, unsuprisingly, steals the scene whenever he appears on screen."
+        }
+    },
+    {
+        "model": "mywatchlist.mylist",
+        "pk": 19,
+        "fields": {
+            "watched": "Sudah ditonton",
+            "title": "Layla Majnun",
+            "rating": 3,
+            "release_date": "11 Februari 2021",
+            "review": "The premise of adapting a famous and beloved classic love story is promising but, unfortunately, the whole execution is just not there. The problem with Monty Tiwa's 'Layla Majnun' is it is completely emotionless. The dialog is bad. The story is so poorly developed and shallow it doesn't draw you in as there are not many characters to root for. Acha Septriasa and Reza Rahadian try hard but the movie as a whole is slow, boring, and doesn't go anywhere exciting."
+        }
+    },
+    {
+        "model": "mywatchlist.mylist",
+        "pk": 20,
+        "fields": {
+            "watched": "Sudah ditonton",
+            "title": "Ali & Ratu Queens",
+            "rating": 2,
+            "release_date": "17 Juni 2021",
+            "review": "This movie was amazing, a fun ride but emotional at the same time. Shoutout to all 4 Queens who made my day!! They're so good I SAID WHAT I SAID. This is not typical Indonesian drama, it's simple but HIT THE RIGHT SPOT. So much fun and I didn't realize that the movie was 100 minutes length."
+        }
+    }
+]

@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Daftar My List Watched </h1>
+
+<table>
+    <tr>
+    <th>Watched</th>
+    <th>Title</th>
+    <th>Rating</th>
+    <th>Release Date</th>
+    <th>Review</th>
+
+    </tr>
+    {% comment %} Tambahkan data di bawah baris ini {% endcomment %}
+    {% for barang in list_watch %}
+    <tr>
+        <th>{{barang.watched}}</th>
+        <th>{{barang.title}}</th>
+        <th>{{barang.rating}}</th>
+        <th>{{barang.release_date}}</th>
+        <th>{{barang.review}}</th>
+    </tr>
+{% endfor %}
+
+</table>
+
+{% endblock content %}
