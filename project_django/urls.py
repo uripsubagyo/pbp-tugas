@@ -23,4 +23,3 @@ urlpatterns = [
     path('mywatchlist/', include('mywatchlist.urls')),
 ]
 
-# TODO: Implement Routings Here

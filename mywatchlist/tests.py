@@ -1,6 +1,6 @@
 from django.test import TestCase, Client
 from django.urls import resolve
-from .views import show_mywatchlist
+from .views import show_mywatchlist, show_json_mywatchlist, show_xml_mywatchlist, show_html_mywatchlist
 
 class mywatchTest(TestCase):
     def test_app_url(self):
