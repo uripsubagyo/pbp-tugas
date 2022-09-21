@@ -2,7 +2,7 @@ from django.db import models
 
 # Create your models here.
 
-class MyList(models.Model): 
+class MyWatchList(models.Model): 
     watched = models.CharField(max_length=50)
     title = models.TextField()
     rating = models.IntegerField()

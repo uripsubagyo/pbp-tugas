@@ -1,7 +1,7 @@
 
 [
     {
-        "model": "mywatchlist.mylist",
+        "model": "mywatchlist.MyWatchList",
         "pk": 1,
         "fields": {
             "watched": "Belum ditonton",
@@ -12,7 +12,7 @@
         }
     },
     {
-        "model": "mywatchlist.mylist",
+        "model": "mywatchlist.MyWatchList",
         "pk": 2,
         "fields": {
             "watched": "Sudah ditonton",
@@ -23,7 +23,7 @@
         }
     },
     {
-        "model": "mywatchlist.mylist",
+        "model": "mywatchlist.MyWatchList",
         "pk": 3,
         "fields": {
             "watched": "Sudah ditonton",
@@ -34,7 +34,7 @@
         }
     },
     {
-        "model": "mywatchlist.mylist",
+        "model": "mywatchlist.MyWatchList",
         "pk": 4,
         "fields": {
             "watched": "Belum ditonton",
@@ -45,7 +45,7 @@
         }
     },
     {
-        "model": "mywatchlist.mylist",
+        "model": "mywatchlist.MyWatchList",
         "pk": 5,
         "fields": {
             "watched": "Belum ditonton",
@@ -56,7 +56,7 @@
         }
     },
     {
-        "model": "mywatchlist.mylist",
+        "model": "mywatchlist.MyWatchList",
         "pk": 6,
         "fields": {
             "watched": "Belum ditonton",
@@ -67,18 +67,18 @@
         }
     },
     {
-        "model": "mywatchlist.mylist",
+        "model": "mywatchlist.MyWatchList",
         "pk": 7,
         "fields": {
             "watched": "Belum ditonton",
             "title": "Three Thousand Years of Longing",
             "rating": 1,
-            "release_date": "31 August 2022",
+            "release_date": "31 Agustus 2022",
             "review": "A cautionary tale about human desire and what it means to love. The pacing was completely on point; I was engrossed right from the first few moments. The cinematography is beautiful. Miller who shows his versatility in a break from his typical movies. That being said it is noticeably a George Miller movie in style. Recommend this one very much, it does not feel too artsy but at the same time is not your typical fantasy movie. This movie is a marvelous artistic depiction of fundamental spiritual concepts that will leave some cold and indifferent while enchanting the initiated in the spiritual paths of the primordial tradition."
         }
     },
     {
-        "model": "mywatchlist.mylist",
+        "model": "mywatchlist.MyWatchList",
         "pk": 8,
         "fields": {
             "watched": "Belum ditonton",
@@ -89,62 +89,62 @@
         }
     },
     {
-        "model": "mywatchlist.mylist",
+        "model": "mywatchlist.MyWatchList",
         "pk": 9,
         "fields": {
             "watched": "Sudah ditonton",
             "title": "Spider-Man: No Way Home",
             "rating": 3,
-            "release_date": "15 December 2021",
+            "release_date": "15 Desember 2021",
             "review": "Superhero extravaganza! Spider-Man NWH didn't meet my expectations, it exceeded them. The most emotionally resonant MCU film so far. This movie is worth every excruciating moment we had to wait. The visuals, the score, the emotions, the story, and ofc the fan-service. This film understands spider-man fans like no other spider-man film before it. Truly a celebration of the most beloved character in the best way possible!"
         }
     },
     {
-        "model": "mywatchlist.mylist",
+        "model": "mywatchlist.MyWatchList",
         "pk": 10,
         "fields": {
             "watched": "Belum ditonton",
             "title": "Super Pets",
             "rating": 2,
-            "release_date": "5 August 2022",
+            "release_date": "5 Agustus 2022",
             "review": "It's not bad. It's not bad at all. I think story wise I was expecting it to go down differently, but I like the animation and it was humorous for what it was"
         }
     },
     {
-        "model": "mywatchlist.mylist",
+        "model": "mywatchlist.MyWatchList",
         "pk": 11,
         "fields": {
             "watched": "Belum ditonton",
             "title": "Dune",
             "rating": 3,
-            "release_date": "13 October 2021",
+            "release_date": "13 Oktober 2021",
             "review": "Nitpics aside, this is a movie with amazing production design, a powerful score, masterful visual effects and phenomenal perfomances. As a fan of the book I can say that it delivered the story in way I didnt expect. It streamlined certain events yet managed to communicate the core messages of the book."
         }
     },
     {
-        "model": "mywatchlist.mylist",
+        "model": "mywatchlist.MyWatchList",
         "pk": 12,
         "fields": {
             "watched": "Belum ditonton",
             "title": "Morbius",
             "rating": 1,
-            "release_date": "30 March 2022",
+            "release_date": "30 Maret 2022",
             "review": "The story, the character development, the action... everything about it felt very dated and messy, with practically no redeeming qualities to be found anywhere. There was no depth to any of the characters which made it so hard to get invested in what was going on. In truth I don't think any of the performances were bad per se, but they were all so bland."
         }
     },
     {
-        "model": "mywatchlist.mylist",
+        "model": "mywatchlist.MyWatchList",
         "pk": 13,
         "fields": {
             "watched": "Belum ditonton",
             "title": "All Quiet on the Western Front",
             "rating": 3,
-            "release_date": "28 October 2022",
+            "release_date": "28 Oktober 2022",
             "review": "I've just came out of the TIFF presentation of this film. Before going in, I assumed that little could be done with the story and the presentation would be one of cinematic sequences and sound. I wasn't wrong, and boy was I blown away (excuse the terrible pun).            "
         }
     },
     {
-        "model": "mywatchlist.mylist",
+        "model": "mywatchlist.MyWatchList",
         "pk": 14,
         "fields": {
             "watched": "Belum ditonton",
@@ -155,7 +155,7 @@
         }
     },
     {
-        "model": "mywatchlist.mylist",
+        "model": "mywatchlist.MyWatchList",
         "pk": 15,
         "fields": {
             "watched": "Sudah ditonton",
@@ -166,29 +166,29 @@
         }
     },
     {
-        "model": "mywatchlist.mylist",
+        "model": "mywatchlist.MyWatchList",
         "pk": 16,
         "fields": {
             "watched": "Sudah ditonton",
             "title": "Doctor Strange in the Multiverse of Madness",
             "rating": 2,
-            "release_date": "5 May 2022",
+            "release_date": "5 Mei 2022",
             "review": "The plot is super weak - the worst of the film - but the script is also very erroneous with some strange and unexplainable writing decisions. There are some interesting shots - some Dutch angles and POV are cool - but this feel stupidly long for a film that is just 2 hours long. It's like watching the action going from setpiece to setpiece in a very inorganic way while travelling between boring universe with a lot of cringe dialogue. I don't even get the point of all this story for the entire universe and even the score - surprisingly considering that is Elfman - is super generic."
         }
     },
     {
-        "model": "mywatchlist.mylist",
+        "model": "mywatchlist.MyWatchList",
         "pk": 17,
         "fields": {
             "watched": "Belum ditonton",
             "title": "Moonfall ",
             "rating": 1,
-            "release_date": "2 February 2022",
+            "release_date": "2 Februari 2022",
             "review": "I don't think it's a bad movie. The effects were great. The movie üas just too long, longer than necessary. The subject of the movie is, of course, very, very, very ridiculous, but so are many movies too. I enjoyed watching the movie with my snacks and beer. I guess I like these kinds of movies, even though they're silly."
         }
     },
     {
-        "model": "mywatchlist.mylist",
+        "model": "mywatchlist.MyWatchList",
         "pk": 18,
         "fields": {
             "watched": "Belum ditonton",
@@ -199,7 +199,7 @@
         }
     },
     {
-        "model": "mywatchlist.mylist",
+        "model": "mywatchlist.MyWatchList",
         "pk": 19,
         "fields": {
             "watched": "Sudah ditonton",
@@ -210,7 +210,7 @@
         }
     },
     {
-        "model": "mywatchlist.mylist",
+        "model": "mywatchlist.MyWatchList",
         "pk": 20,
         "fields": {
             "watched": "Sudah ditonton",

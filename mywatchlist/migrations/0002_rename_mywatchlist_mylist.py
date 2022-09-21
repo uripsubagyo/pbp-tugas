@@ -12,6 +12,6 @@ class Migration(migrations.Migration):
     operations = [
         migrations.RenameModel(
             old_name='MyWatchList',
-            new_name='MyList',
+            new_name='MyWatchList',
         ),
     ]
