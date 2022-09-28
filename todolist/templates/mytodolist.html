@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<br>
+<h1>Daftar My Task List</h1>
+<h3>Username :</h3>
+<h3>{{username}}</h3>
+{% if user_list %}
+<table>
+    <tr>
+    <th>Title</th>
+    <th>Description</th>
+    <th>Status</th>
+    <th>Finish Mark</th>
+    <th>Remove Task</th>
+
+    </tr>
+    {% comment %} Tambahkan data di bawah baris ini {% endcomment %}
+    {% for list in user_list %}
+    <tr>
+        <th>{{list.title}}</th>
+        <th>{{list.description}}</th>
+        <th>{{list.is_finised}}</th>
+        <th><button><a href="{% url 'todolist:finish_task' list.id %}">Finish</a></button></th>
+        <th><button><a href="{% url 'todolist:remove_task' list.id %}">Remove</a></button></th>
+    </tr>
+    {% endfor %}
+</table>
+{% else %}
+    <p>No Task</p>
+    {% endif %}
+
+<br>
+<button><a href="{% url 'todolist:add_task' %}">Create Task</a></button>
+<button><a href="{% url 'todolist:logout' %}">Logout</a></button>
+{% endblock content %}
