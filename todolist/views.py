@@ -65,7 +65,7 @@ def add_task(request):
             title = myform.cleaned_data["titles"]
             description = myform.cleaned_data["description"]
             # Task.objects.create(title=title, description=description, date=date, user=request.user)
-            Task.objects.create(title=title, description=description, date=datetime.datetime.now(), user=request.user, is_finised=False)
+            Task.objects.create(title=title, description=description, date=datetime.datetime.now(), user=request.user, is_finised="❌")
 
             return redirect('todolist:show_todolist')
 
@@ -77,7 +77,7 @@ def add_task(request):
 # finish user
 def finish_task(request, pk):
     mytask = Task.objects.get(id=pk)
-    mytask.is_finised = True
+    mytask.is_finised = "✅"
     mytask.save()
     return redirect('todolist:show_todolist')
 
