@@ -1,38 +1,44 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<br>
-<h1>Tugas 4 PBP</h1>
-<br>
-<h2>My Task List</h2>
-<h3>Username :</h3>
-<h3>{{username}}</h3>
-{% if user_list %}
-<table >
-    <tr>
-    <th style="border: 1px solid black; padding:5px 20px 5px 20px ">Title</th>
-    <th style="border: 1px solid black">Description</th>
-    <th style="border: 1px solid black; padding:5px 20px 5px 20px">Status</th>
-    <th style="border: 1px solid black ; padding:5px 20px 5px 20px">Finish Mark</th>
-    <th style="border: 1px solid black; padding:5px 20px 5px 20px">Remove Task</th>
+<div class="row" style="margin: 20px ;">
+    <div class="col-xl-2 head-name-dash" style="height:100%; text-align: center; margin-top: 50px;">
+        <img style="height: 112px;" src="https://docs.google.com/uc?id=1AAxuDd1BLa9v60VFl9iQxzJ6BEnPdP1v" alt="">
+        <h3 style="color: #C7C7C7; font-size: 15px; margin-top: 10px; margin-bottom:0px">Username :</h3>
+        <h3>{{username}}</h3>
+    </div>
+    <div class="col-xl-10">
+        <div class="btn-logout-bar" style="display:flex; justify-content:space-between; margin: 30px 0px 30px 0px; ">
+            <p style="font-size:30; font-weight: 700; font-size: 30px; ">My Task List</p>
+            <button type="button" class="btn btn-danger" style="height: 50px; width:100px; border-radius: 35px;"><a href="{% url 'todolist:logout' %}" style="color:white; text-decoration: none; font-weight: 400px;">Logout</a></button>
+        </div>
+        <button type="button" class="btn btn-light btn-lg" style="width: 100%; border-radius: 35px; border: 1px solid #554994;"><a href="{% url 'todolist:add_task' %}" style="color:#554994; text-decoration: none;">Create Task</a></button>
+        <div>
+            {% if user_list %}
+                <div class="cards-section">
+                    {% comment %} Tambahkan data di bawah baris ini {% endcomment %}
+                    {% for list in user_list %}
+                    <div class="card border-success mb-3" style="width: 250px; min-height: 300px; margin: 20px;" onMouseOver="this.style.color='red'" onMouseOut="this.style.color='green'">
+                        <div class="card-header bg-transparent border-success">{{list.is_finised}}</div>
+                        <div class="card-body text-success">
+                          <h5 class="card-title">{{list.title}}</h5>
+                          <p class="card-text">{{list.description}}</p>
+                        </div>
+                        <div class="card-footer bg-transparent border-success" style="display: flex; justify-content: space-between">
+                            <button style="color: white ;" class="btn btn-success" type="button"><a href="{% url 'todolist:finish_task' list.id %}" style="color:white; text-decoration: none;">Finish</a></button>
+                            <button style="color: white ;" class="btn btn-danger" type="button"><a href="{% url 'todolist:remove_task' list.id %}"style="color:white; text-decoration:none;"">Remove</a></button>
+                        </div>
+                      </div>
+                    {% endfor %}
+                </div>
+            {% else %}
+                <p style="text-align: center; margin-top:80px; font-size: 20px; font-weight: 700">No Task!</p>
+                {% endif %}
+        </div>
+    </div>
+</div>
 
-    </tr>
-    {% comment %} Tambahkan data di bawah baris ini {% endcomment %}
-    {% for list in user_list %}
-    <tr >
-        <th style="border: 1px solid black"><p>{{list.title}}<p></th>
-        <th style="border: 1px solid black; padding:5px 20px 5px 20px">{{list.description}}</th>
-        <th style="border: 1px solid black">{{list.is_finised}}</th>
-        <th style="border: 1px solid black"><button><a href="{% url 'todolist:finish_task' list.id %}">Finish</a></button></th>
-        <th style="border: 1px solid black"><button><a href="{% url 'todolist:remove_task' list.id %}">Remove</a></button></th>
-    </tr>
-    {% endfor %}
-</table>
-{% else %}
-    <p>No Task</p>
-    {% endif %}
+
 
 <br>
-<button><a href="{% url 'todolist:add_task' %}">Create Task</a></button>
-<button><a href="{% url 'todolist:logout' %}">Logout</a></button>
 {% endblock content %}
