@@ -18,9 +18,10 @@
             <button type="button" class="btn btn-danger" style="height: 50px; width:100px; border-radius: 35px;"><a href="{% url 'todolist:logout' %}" style="color:white; text-decoration: none; font-weight: 400px;">Logout</a></button>
         </div>
         <button type="button" class="btn btn-light btn-lg" style="width: 100%; border-radius: 35px; border: 1px solid #554994;"><a href="{% url 'todolist:add_task' %}" style="color:#554994; text-decoration: none;">Create Task</a></button>
+        <button data-bs-toggle="modal" data-bs-target="#staticBackdrop" type="button" class="btn btn-light btn-lg" style="width: 100%; border-radius: 35px; border: 1px solid #554994; margin-top: 10px;">Add Task</button>
         <div>
             {% if user_list %}
-                <div class="cards-section">
+                <div class="cards-section" id="cards-section">
                     {% comment %} Tambahkan data di bawah baris ini {% endcomment %}
                     {% for list in user_list %}
                     <div class="card border-success mb-3" style="width: 250px; min-height: 300px; margin: 20px;" onMouseOver="this.style.color='red'" onMouseOut="this.style.color='green'">
@@ -39,7 +40,7 @@
                             <button style="color: white ; border-radius: 15px;" class="btn btn-success" type="button"><a href="{% url 'todolist:finish_task' list.id %}" style="color:white; text-decoration: none;">Finish</a></button>
                             <button style="color: white ; border-radius: 15px;" class="btn btn-danger" type="button"><a href="{% url 'todolist:remove_task' list.id %}"style="color:white; text-decoration:none;"">Remove</a></button>
                         </div>
-                      </div>
+                    </div>
                     {% endfor %}
                 </div>
             {% else %}
@@ -49,7 +50,77 @@
     </div>
 </div>
 
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">Add Task</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form id="form" onsubmit="return false;">
+                {% csrf_token %}
+                <div>
+                    <p>Title</p>
+                    <input type="text" name="title"></input>
+                </div>
+                <div>
+                    <p>Description</p>
+                    <textarea type="text" name="description"></textarea>
+                </div>
+            </form>
+        </div>
+        <div class="modal-footer">
+          <button id="button-submit" type="submit"  value="Submit" class="btn btn-primary" data-bs-dismiss="modal">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
+  <script>
+    function addTask(){
+        fetch("{% url 'todolist:add_task_modal' %}", {
+          method: "POST",
+          body: new FormData(document.querySelector('#form'))
+        }).then(autoRefresh)
+        return false
+    }
+
+
+    async function getTask(){
+        return fetch("{% url 'todolist:show_json' %}").then((res) => res.json())
+    }
+
+    async function autoRefresh(){
+        document.getElementById("cards-section").innerHTML = ""
+        const task = await getTask()
+        let addHtml = `<div></div>`
+            task.forEach((item) => {
+            addHtml += `<div class="card border-success mb-3" style="width: 250px; min-height: 300px; margin: 20px;" onMouseOver="this.style.color='red'" onMouseOut="this.style.color='green'">
+                        <div class="card-header bg-transparent border-success">
+                            <div style="display: flex; justify-content: space-between">
+                                <p style="margin-bottom: 0px;">Your Task Status</p>
+                                <div>${item.fields.is_finised}</div>
+                            </div>
+                            <div style="margin-top: 0px;">${item.fields.date}</div>
+                        </div>
+                        <div class="card-body text-success">
+                          <h5 class="card-title" style="font-weight:700 ;">${item.fields.title}</h5>
+                          <p class="card-text">${item.fields.description}</p>
+                        </div>
+                        <div class="card-footer bg-transparent border-success" style="display: flex; justify-content: space-between">
+                    
+                            </div>
+                    </div>`
+        })
+        
+        document.getElementById("cards-section").innerHTML = addHtml
+    }
+
+    document.getElementById("button-submit").onclick = addTask
+    autoRefresh()
+  </script>
 
 <br>
 {% endblock content %}

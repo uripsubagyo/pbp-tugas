@@ -13,6 +13,8 @@ from django.contrib.auth.decorators import login_required
 from django.contrib.auth import logout
 from todolist.forms import taskForm
 from todolist.models import Task
+from django.http import HttpResponse, HttpResponseNotFound
+from django.core import serializers
 
 
 @login_required(login_url='/todolist/login/')
@@ -73,6 +75,22 @@ def add_task(request):
         'form' : taskForm()
     }
     return render(request, 'add_task.html', context)
+
+def add_task_modal(request):
+    if request.method == "POST":
+        title_task = request.POST.get("title")
+        description_task = request.POST.get('description')
+
+        newTask = Task(title=title_task, description=description_task, date=datetime.datetime.now(), user=request.user, is_finised="❌")
+        newTask.save()
+
+        return HttpResponse(b"CREATED", status=201)
+    return HttpResponseNotFound()
+
+
+def show_json(request):
+    data_user = Task.objects.filter(user=request.user)
+    return  HttpResponse(serializers.serialize('json', data_user))
 
 # finish user
 def finish_task(request, pk):
