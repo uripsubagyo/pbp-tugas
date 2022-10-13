@@ -1,7 +1,7 @@
 
 # Tugas 6
 
-Anda dapat mengakses tugas 6 melalui 
+Anda dapat mengakses tugas 6 PBP I Made Urip Subagyo  pada [link](https://pbp-tugas-urip.herokuapp.com/todolist/) berikut.
 
 ## Perbedaan antara asynchronous dengan synchronous programming
 

@@ -103,3 +103,4 @@ def remove_task(request, pk):
     mytask = Task.objects.get(id = pk)
     Task.delete(mytask)
     return redirect('todolist:show_todolist')
+

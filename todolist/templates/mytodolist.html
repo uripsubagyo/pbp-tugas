@@ -62,12 +62,12 @@
             <form id="form" onsubmit="return false;">
                 {% csrf_token %}
                 <div>
-                    <p>Title</p>
-                    <input type="text" name="title"></input>
+                    <p style="margin-top: 10px; margin-bottom: 0px;">Title</p>
+                    <input type="text" name="title" class="form-control"></input>
                 </div>
                 <div>
-                    <p>Description</p>
-                    <textarea type="text" name="description"></textarea>
+                    <p style="margin-top: 10px; margin-bottom: 4px;">Description</p>
+                    <textarea type="text" name="description" class="form-control"></textarea>
                 </div>
             </form>
         </div>
@@ -110,14 +110,17 @@
                           <p class="card-text">${item.fields.description}</p>
                         </div>
                         <div class="card-footer bg-transparent border-success" style="display: flex; justify-content: space-between">
-                    
+                            <button style="color: white ; border-radius: 15px;" class="btn btn-success" type="button"><a href="finish_task/${item.pk}" style="color:white; text-decoration: none;">Finish</a></button>
+                            <button style="color: white ; border-radius: 15px;" class="btn btn-danger" type="button"><a href="remove_task/${item.pk}"style="color:white; text-decoration:none;"">Remove</a></button>
+                        
                             </div>
                     </div>`
         })
         
         document.getElementById("cards-section").innerHTML = addHtml
     }
-
+     
+    
     document.getElementById("button-submit").onclick = addTask
     autoRefresh()
   </script>
